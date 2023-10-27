@@ -1,14 +1,10 @@
 class Juego
 class Personaje
-Class Prisionero
-Class Arma
-class H 
-Class Bomba
-Class Municion
-class Escenario
-class Mision 
+class Arma
+class Bala
 class MarcoRossi
-class TarmaRoving
-class EriKasamoto
-class FioGermi 
-class Marcador
+class NaveAlien
+class Actualizable
+class Dibujo
+class Ventana
+

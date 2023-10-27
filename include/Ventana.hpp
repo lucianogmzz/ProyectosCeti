@@ -1,7 +1,7 @@
 #include <curses.h>
 #include <unistd.h>
-#include<list>
-#include<Actualizable.hpp>
+#include <list>
+#include <Actualizable.hpp>
 using namespace std;
 
 class Ventana
@@ -30,9 +30,10 @@ public:
         usleep(41000);
     }
 
-    void Dibujar(list<Dibujo*> dibujos)
+    void Dibujar(list<Dibujo *> dibujos)
     {
         clear();
+        
         for (auto &&dibujo : dibujos)
         {
             dibujo->Dibujar();
