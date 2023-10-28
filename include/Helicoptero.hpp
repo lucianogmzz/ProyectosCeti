@@ -2,16 +2,17 @@
 #include <Dibujo.hpp>
 #include <Actualizable.hpp>
 
-class MarcoRossi : public Dibujo, public Actualizable
+class Helicoptero : public Dibujo, Actualizable
+
 {
 private:
-
+    
 public:
-    MarcoRossi() : Dibujo("MarcoRossi")
+    Helicoptero() : Dibujo("Helicoptero")
     {
     }
 
-    MarcoRossi(int x, int y) : Dibujo(x, y, "MarcoRossi")
+    Helicoptero(int x, int y) : Dibujo(x, y, "Helicoptero")
     {
     }
 
@@ -29,17 +30,17 @@ public:
         this->x += 1;
     }
 
-    void DesplazarArr()
+    void DesplazarArri()
     {
         this->y -= 1;
     }
 
-    void DesplazarAba()
+    void DesplazarAbaj()
     {
         this->y += 1;
     }
 
-   
 
-    ~MarcoRossi() {}
+ 
+    ~Helicoptero() {}
 };

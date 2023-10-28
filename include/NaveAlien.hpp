@@ -1,12 +1,10 @@
 #pragma once
 #include <Dibujo.hpp>
 #include <Actualizable.hpp>
-#include <Arma.hpp>
 
 class NaveAlien : public Dibujo, public Actualizable
 {
 private:
-    Arma *arma;
 
 public:
     NaveAlien() : Dibujo("NaveAlien")
@@ -31,24 +29,17 @@ public:
         this->x += 1;
     }
 
-    void DesplazarArr()
-    {
-        this->y += 1;
-    }
-
-    void DesplazarAba()
+    void DesplazarArri()
     {
         this->y -= 1;
     }
 
-    void RecogerArma(Arma *arma)
+    void DesplazarAbaj()
     {
-        this->arma = arma;
+        this->y += 1;
     }
 
-    void Disparar()
-    {
-    }
+    
 
     ~NaveAlien() {}
 };

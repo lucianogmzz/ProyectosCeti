@@ -1,0 +1,25 @@
+@startuml MetalSlug
+
+class Actualizable
+class Dibujo
+class Helicoptero
+class MarcoRossi
+class MenuP
+class NaveAlien
+class Ventana
+class Juego
+
+Actualizable <-- Ventana
+Actualizable <-- Dibujo
+Dibujo <-- MarcoRossi
+Dibujo <-- NaveAlien
+Dibujo <-- Helicoptero
+Dibujo <-- MenuP
+Juego *-- MenuP
+
+
+
+
+
+
+@enduml MetalSlug 
