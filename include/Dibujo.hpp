@@ -44,7 +44,6 @@ public:
             mvaddstr(getcury(stdscr) + 1,
                      this->x,
                      linea.c_str());
-
         }
         archivo.clear();
         archivo.seekg(0);

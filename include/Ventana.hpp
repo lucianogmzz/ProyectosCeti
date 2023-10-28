@@ -17,30 +17,26 @@ public:
         cbreak();
         keypad(stdscr, TRUE);
         timeout(10);
-
     }
     void Actualizar(list<Actualizable *> actualizables)
     {
-        for (auto &&dibujo  : actualizables)
+        for (auto &&dibujo : actualizables)
         {
-           dibujo->Actualizar(); 
+            dibujo->Actualizar();
         }
-        
-        
+
         usleep(41000);
     }
 
     void Dibujar(list<Dibujo *> dibujos)
     {
         clear();
-        
+
         for (auto &&dibujo : dibujos)
         {
             dibujo->Dibujar();
         }
-        
-        
-        
+
         box(stdscr, '-', '|');
         refresh();
     }

@@ -5,7 +5,6 @@
 class MarcoRossi : public Dibujo, public Actualizable
 {
 private:
-
 public:
     MarcoRossi() : Dibujo("MarcoRossi")
     {
@@ -38,8 +37,6 @@ public:
     {
         this->y += 1;
     }
-
-   
 
     ~MarcoRossi() {}
 };

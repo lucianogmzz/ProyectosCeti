@@ -6,7 +6,6 @@ class Helicoptero : public Dibujo, Actualizable
 
 {
 private:
-    
 public:
     Helicoptero() : Dibujo("Helicoptero")
     {
@@ -40,7 +39,5 @@ public:
         this->y += 1;
     }
 
-
- 
     ~Helicoptero() {}
 };

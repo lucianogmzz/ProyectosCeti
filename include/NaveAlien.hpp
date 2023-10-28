@@ -5,7 +5,6 @@
 class NaveAlien : public Dibujo, public Actualizable
 {
 private:
-
 public:
     NaveAlien() : Dibujo("NaveAlien")
     {
@@ -38,8 +37,6 @@ public:
     {
         this->y += 1;
     }
-
-    
 
     ~NaveAlien() {}
 };
